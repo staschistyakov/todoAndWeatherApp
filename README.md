@@ -1,4 +1,5 @@
 # todoAndWeatherApp
 Simple Todo and Weather App (Vanilla JS)
 
-![Screenshot](screenshot.png)
+![Cloudy version](screenshot1.png)
+![Sunny version](screenshot2.png)
