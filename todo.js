@@ -12,7 +12,7 @@ function addEvent(){
   textEntry.append(text);
   const deleteButton = document.createElement("div");
   deleteButton.classList.add("deleteButton");
-  deleteButton.innerHTML = "<img src='trash.svg'>";
+  deleteButton.innerHTML = "<img src='svgs/trash.svg'>";
   const editButton = document.createElement("div");
   editButton.classList.add("editButton");
   editButton.innerHTML = "<img src='svgs/pencil.svg'>";
@@ -198,7 +198,7 @@ function pageOnLoad(){
       textEntry.append(text);
       const deleteButton = document.createElement("div");
       deleteButton.classList.add("deleteButton");
-      deleteButton.innerHTML = "<img src='trash.svg'>";
+      deleteButton.innerHTML = "<img src='svgs/trash.svg'>";
       const editButton = document.createElement("div");
       editButton.classList.add("editButton");
       editButton.innerHTML = "<img src='svgs/pencil.svg'>";
