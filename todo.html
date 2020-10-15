@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Todo and Weather App</title>
+    <link rel="stylesheet" href="todo.css" />
+    <script src="todo.js" defer></script>
+  </head>
+  <body>
+    <div id="all">
+      <div id="mainBlock">
+        <div id="headerBlock">
+          <h1>Things to do today</h1>
+          <span id="date"></span>
+        </div>
+        <div id="listBlock">
+          <ul id="myList">
+          </ul>
+        </div>
+        <div id="functionalityBlock">
+          <input type="textarea" class="newEvent" id="newEvent" placeholder="New Event" />
+          <input type="button" class="standardButton" id="addEvent" value="Add Event" />
+          <input type="button" class="standardButton" id="clearList" value="Clear List"/>
+        </div>
+      </div>
+      <div id="weatherBlock" class="weatherBlock">
+        <div id="searchLocation">
+          <input type="textarea" class="newEvent" id="locationSearch" placeholder="Search for your location"/>
+        </div>
+        <div id="location">
+        </div>
+        <div id="flag">
+        </div>
+        <div id="temperature">
+        </div>
+        <div id="weatherAnimation" class="weatherAnimation">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

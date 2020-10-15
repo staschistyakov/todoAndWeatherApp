@@ -1,0 +1,249 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: arial;
+}
+
+#all{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 40% 20%;
+  height: 100vh;
+  justify-content: center;
+}
+
+#mainBlock{
+  grid-column: 1/2;
+  height: 700px;
+  border: 3px solid #9a28e8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  overflow: auto;
+}
+
+#headerBlock{
+  text-align: center;
+  padding: 20px;
+  background-color: #9a28e8;
+  border-bottom: 2px solid #fff;
+}
+
+#headerBlock h1{
+  color: #fff;
+}
+
+#headerBlock span{
+  font-size: 10pt;
+  text-shadow: 1px 1px 1px black;
+  color: #428ff4;
+}
+
+#listBlock{
+  text-align: center;
+  padding: 20px;
+}
+
+#listBlock ul{
+  list-style: none;
+}
+
+.listEntry{
+  color: #fff;
+  border-bottom: 2px solid #2f82f1;
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14pt;
+  background-color: #9a28e8;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.listEntry:hover{
+  background-color: #fff;
+  color: #9a28e8;
+}
+
+.textEntry{
+  padding: 0px 0px 0px 10px;
+  margin: auto;
+}
+
+.deleteButton{
+  background-color: #9a28e8;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+.deleteButton:hover{
+  background-color: #2f82f1;
+}
+
+.editButton{
+  background-color: #9a28e8;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+.editButton:hover{
+  background-color: #2f82f1;
+}
+
+#functionalityBlock{
+    display: flex;
+    justify-content: center;
+}
+
+#functionalityBlock{
+  padding: 10px;
+}
+
+.newEvent{
+  margin-right: 20px;
+  width: 350px;
+  padding: 10px;
+  color: #9a28e8;
+  border-radius: 10px;
+  border: 2px solid #9a28e8;
+  font-size: 14pt;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.newEvent::placeholder{
+  color: #9a28e8;
+}
+
+.newEvent:focus{
+  background-color: #9a28e8;
+  color: #fff;
+  outline: none;
+}
+
+.newEvent:focus::placeholder{
+  color: #fff;
+}
+
+.standardButton{
+  margin-right: 5px;
+  padding: 10px;
+  border: 2px solid #fff;
+  background-color: #9a28e8;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.standardButton:focus{
+  outline: none;
+}
+
+.standardButton:hover{
+  background-color: #2f82f1;
+  color: #fff;
+  border: 2px solid #9a28e8;
+}
+
+#editTextarea::selection{
+  background-color: #fff;
+}
+
+.weatherBlock{
+  margin-left: 20px;
+  height: 700px;
+  width: 500px;
+  grid-column: 2/3;
+  border: 3px solid #9a28e8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  overflow: auto;
+  background-color: #fff;
+}
+
+#searchLocation{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 20px 0px;
+}
+
+#temperature{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: #9a28e8;
+  font-size: 48pt;
+  text-shadow: 1px 1px 1px black;
+}
+
+#location{
+  display: flex;
+  justify-content: center;
+  color: #9a28e8;
+  font-size: 48pt;
+  text-shadow: 1px 1px 1px black;
+}
+
+.weatherAnimation{
+  max-height: 200px;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.weatherAnimation img{
+    height: 200px;
+    width: 200px;
+    animation-name: ckw;
+    animation-duration: 1s;
+}
+
+@keyframes ckw {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rainy{
+  background: rgb(135,135,135);
+  background: linear-gradient(0deg, rgba(135,135,135,1) 0%, rgba(166,197,242,1) 84%);
+}
+
+.thunderstormy{
+  background: rgb(105,134,154);
+  background: linear-gradient(0deg, rgba(105,134,154,1) 0%, rgba(85,95,103,1) 84%);
+}
+
+.misty{
+  background: rgb(161,185,201);
+  background: linear-gradient(0deg, rgba(161,185,201,1) 0%, rgba(176,202,222,1) 84%);
+}
+
+.snowy{
+  background: rgb(219,243,245);
+  background: linear-gradient(0deg, rgba(219,243,245,1) 0%, rgba(234,247,249,1) 84%);
+}
+
+.sunny{
+  background: rgb(255,253,226);
+  background: linear-gradient(0deg, rgba(255,253,226,1) 0%, rgba(244,238,66,1) 84%);
+}
+
+.cloudy{
+  background: rgb(135,135,135);
+  background: linear-gradient(0deg, rgba(135,135,135,1) 0%, rgba(181,197,221,1) 84%);
+}
+
+#flag{
+  display: flex;
+  justify-content: center;
+}
