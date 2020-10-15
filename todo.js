@@ -15,7 +15,7 @@ function addEvent(){
   deleteButton.innerHTML = "<img src='trash.svg'>";
   const editButton = document.createElement("div");
   editButton.classList.add("editButton");
-  editButton.innerHTML = "<img src='pencil.svg'>";
+  editButton.innerHTML = "<img src='svgs/pencil.svg'>";
 
   myList.appendChild(li).append(textEntry,deleteButton,editButton);
 
@@ -125,49 +125,49 @@ function pageOnLoad(){
     body = document.body;
 
     if (weather === "Clouds"){
-      weatherDiv.innerHTML = '<img src="clouds.svg">';
+      weatherDiv.innerHTML = '<img src="svgs/clouds.svg">';
       weatherBlock.classList.remove(...weatherBlock.classList);
       weatherBlock.classList.add("cloudy");
       body.classList.add("cloudy");
       weatherBlock.classList.add("weatherBlock");
     } else if (weather === "Rain"){
-      weatherDiv.innerHTML = '<img src="rain.svg">';
+      weatherDiv.innerHTML = '<img src="svgs/rain.svg">';
       weatherBlock.classList.remove(...weatherBlock.classList);
       weatherBlock.classList.add("rainy");
       body.classList.add("rainy");
       weatherBlock.classList.add("weatherBlock");
     } else if (weather === "Clear"){
-      weatherDiv.innerHTML = '<img src="sun.svg">';
+      weatherDiv.innerHTML = '<img src="svgs/sun.svg">';
       weatherBlock.classList.remove(...weatherBlock.classList);
       weatherBlock.classList.add("sunny");
       body.classList.add("sunny");
       weatherBlock.classList.add("weatherBlock");
     } else if (weather === "Mist"){
-      weatherDiv.innerHTML = '<img src="mist.svg">';
+      weatherDiv.innerHTML = '<img src="svgs/mist.svg">';
       weatherBlock.classList.remove(...weatherBlock.classList);
       weatherBlock.classList.add("misty");
       body.classList.add("misty");
       weatherBlock.classList.add("weatherBlock");
     } else if (weather === "snow"){
-      weatherDiv.innerHTML = '<img src="snow.svg">';
+      weatherDiv.innerHTML = '<img src="svgs/snow.svg">';
       weatherBlock.classList.remove(...weatherBlock.classList);
       weatherBlock.classList.add("snowy");
       body.classList.add("snowy");
       weatherBlock.classList.add("weatherBlock");
     } else if (weather === "thunderstorm"){
-      weatherDiv.innerHTML = '<img src="thunderstorm.svg">';
+      weatherDiv.innerHTML = '<img src="svgs/thunderstorm.svg">';
       weatherBlock.classList.remove(...weatherBlock.classList);
       weatherBlock.classList.add("thunderstormy");
       body.classList.add("thunderstormy");
       weatherBlock.classList.add("weatherBlock");
     } else if (weather === "drizzle"){
-      weatherDiv.innerHTML = '<img src="rain.svg">';
+      weatherDiv.innerHTML = '<img src="svgs/rain.svg">';
       weatherBlock.classList.remove(...weatherBlock.classList);
       weatherBlock.classList.add("rainy");
       body.classList.add("rainy");
       weatherBlock.classList.add("weatherBlock");
     } else {
-      weatherDiv.innerHTML = '<img src="mist.svg">';
+      weatherDiv.innerHTML = '<img src="svgs/mist.svg">';
       weatherBlock.classList.remove(...weatherBlock.classList);
       weatherBlock.classList.add("misty");
       body.classList.add("misty");
@@ -201,7 +201,7 @@ function pageOnLoad(){
       deleteButton.innerHTML = "<img src='trash.svg'>";
       const editButton = document.createElement("div");
       editButton.classList.add("editButton");
-      editButton.innerHTML = "<img src='pencil.svg'>";
+      editButton.innerHTML = "<img src='svgs/pencil.svg'>";
 
       myList.appendChild(li).append(textEntry,deleteButton,editButton);
 
@@ -264,56 +264,56 @@ function loadWeather(){
         body = document.body;
 
         if (weather === "Clouds"){
-          weatherDiv.innerHTML = '<img src="clouds.svg">';
+          weatherDiv.innerHTML = '<img src="svg/clouds.svg">';
           weatherBlock.classList.remove(...weatherBlock.classList);
           body.classList.remove(...body.classList);
           weatherBlock.classList.add("cloudy");
           body.classList.add("cloudy");
           weatherBlock.classList.add("weatherBlock");
         } else if (weather === "Rain"){
-          weatherDiv.innerHTML = '<img src="rain.svg">';
+          weatherDiv.innerHTML = '<img src="svgs/rain.svg">';
           weatherBlock.classList.remove(...weatherBlock.classList);
           body.classList.remove(...body.classList);
           weatherBlock.classList.add("rainy");
           body.classList.add("rainy");
           weatherBlock.classList.add("weatherBlock");
         } else if (weather === "Clear"){
-          weatherDiv.innerHTML = '<img src="sun.svg">';
+          weatherDiv.innerHTML = '<img src="svgs/sun.svg">';
           weatherBlock.classList.remove(...weatherBlock.classList);
           body.classList.remove(...body.classList);
           weatherBlock.classList.add("sunny");
           body.classList.add("sunny");
           weatherBlock.classList.add("weatherBlock");
         } else if (weather === "Mist"){
-          weatherDiv.innerHTML = '<img src="mist.svg">';
+          weatherDiv.innerHTML = '<img src="svgs/mist.svg">';
           weatherBlock.classList.remove(...weatherBlock.classList);
           body.classList.remove(...body.classList);
           weatherBlock.classList.add("misty");
           body.classList.add("misty");
           weatherBlock.classList.add("weatherBlock");
         } else if (weather === "snow"){
-          weatherDiv.innerHTML = '<img src="snow.svg">';
+          weatherDiv.innerHTML = '<img src="svgs/snow.svg">';
           weatherBlock.classList.remove(...weatherBlock.classList);
           body.classList.remove(...body.classList);
           weatherBlock.classList.add("snowy");
           body.classList.add("snowy");
           weatherBlock.classList.add("weatherBlock");
         } else if (weather === "thunderstorm"){
-          weatherDiv.innerHTML = '<img src="thunderstorm.svg">';
+          weatherDiv.innerHTML = '<img src="svgs/thunderstorm.svg">';
           weatherBlock.classList.remove(...weatherBlock.classList);
           body.classList.remove(...body.classList);
           weatherBlock.classList.add("thunderstormy");
           body.classList.add("thunderstormy");
           weatherBlock.classList.add("weatherBlock");
         } else if (weather === "drizzle"){
-          weatherDiv.innerHTML = '<img src="rain.svg">';
+          weatherDiv.innerHTML = '<img src="svgs/rain.svg">';
           weatherBlock.classList.remove(...weatherBlock.classList);
           body.classList.remove(...body.classList);
           weatherBlock.classList.add("rainy");
           body.classList.add("rainy");
           weatherBlock.classList.add("weatherBlock");
         } else {
-          weatherDiv.innerHTML = '<img src="mist.svg">';
+          weatherDiv.innerHTML = '<img src="svgs/mist.svg">';
           weatherBlock.classList.remove(...weatherBlock.classList);
           body.classList.remove(...body.classList);
           weatherBlock.classList.add("misty");
